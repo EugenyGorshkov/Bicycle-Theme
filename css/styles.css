@@ -287,7 +287,19 @@ body {
 
 } */
 
-/* ======== */
+@media (max-width: 900px) {
+    .page__info {
+        padding: 60px 0px;
+    } 
+}
+
+@media (max-width: 550px) {
+    .page__info {
+        padding: 35px 0px;
+    } 
+}
+
+/* =============================== */
 
 .block {
     text-align: center;
@@ -321,7 +333,13 @@ body {
     background-color: rgba(53,55,56,0.2);
 }
 
-/* =========================================== */
+@media (max-width: 1500px) {
+    .block__text_j::after {
+        margin: 20px auto 0 auto;
+    }
+}
+
+/* ============== brands ============== */
 
 /* .page__brands {
 
@@ -367,13 +385,18 @@ body {
     visibility: hidden;
     transition: all 0.5s ease 0s;
 }
-
 .item__image {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
+}
+.item__small-img {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;   
 }
 .brands__block {
     padding: 70px 68px 64px 67px;
@@ -385,6 +408,7 @@ body {
     position: absolute;
     bottom: -10px;
     left: 50%;
+    transform: translate(-10px, 0px);
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
@@ -393,4 +417,175 @@ body {
 }
 .brands__small-img {
     padding-bottom: 37%;
+}
+
+@media (max-width: 1500px) {
+    .brands__block {
+        padding: 35px 35px 30px 35px;
+    }
+}
+
+@media (max-width: 900px) {
+    .brands__row {
+        flex-direction: column;
+    }
+    .brands__row_o .brands__col {
+        order: 2;
+    }
+    .brands__row_o .brands__col_b {
+        order: 1;
+    }
+    .item {
+        height: auto;
+        padding-bottom: 60%;
+    }
+}
+
+/* ============ email ============ */
+
+/* .page__email {
+
+} */
+.email {
+    padding: 110px 0px;
+}
+.email__block {
+    max-width: 564px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.email__logo {
+    padding-bottom: 39px;
+}
+.email__title {
+    padding-bottom: 35px;
+    font-size: 24px;
+    font-style: italic;
+}
+.email__form {
+    width: 100%;
+}
+.email__input {
+    display: flex;
+    height: 70px;
+}
+
+.email__input input {
+    font-size: 20px;
+    font-style: italic;
+    color: #929292;
+
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-right: 8px;
+    flex: 1 1 auto;
+
+    border: 1px solid #d3d7d9;
+}
+.email__input button {
+    flex: 0 0 126px;
+
+
+    font-size: 24px;
+    color: #ffffff;
+
+    background-color: #64c29e;
+}
+
+@media (max-width: 550px) {
+    .email {
+        padding: 50px 0;
+    } 
+    .email__input {
+        height: 100%;
+        flex-direction: column;
+    }
+    .email__input input {
+        margin-right: 0px;
+        flex: auto;
+        height: 60px;
+        margin-bottom: 8px;
+    }
+    .email__input button {
+        height: 60px;
+        flex: auto;
+    }
+}
+
+/* ========================= footer ========================= */
+
+.footer {
+    background-color: #f7f7f7;
+}
+.footer__container {
+    padding: 100px 15px;
+}
+/* .footer__adress {
+
+} */
+.footer__row {
+    display: flex;
+    align-items: center;
+}
+.footer__col {
+    flex: 0 1 33.33%
+}
+.footer__text {
+    font-size: 13.9px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 17px;
+
+
+    color: #848789;
+}
+.footer__text span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social__list {
+    display: flex;
+}
+.social__item {
+    padding-right: 15px;
+}
+.social__item:last-child {
+    padding-right: 0px;
+}
+.footer__dev {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.dev__text {
+    font-size: 13.9px;
+    line-height: 17px;
+    font-style: italic;
+
+    padding-right: 9px;
+}
+
+@media (max-width: 550px) {
+    .footer__container {
+        text-align: center;
+        padding: 30px 15px;
+    }
+    .footer__row {
+        flex-direction: column;
+    }
+    .footer__adress {
+        padding-bottom: 15px;
+    }
+    .footer__social {
+        padding-bottom: 15px;
+    }
 }
